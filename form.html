@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id = "container">
+        <form method = "POST" action="process.php">
+            <h2>Simple Calculator</h2>
+            <input type = "number" name = "num1" id = "num1" required placeholder="Enter first number"><br>
+            <select name = "operator" id = "operator" required>
+                <option value = "+">+</option>
+                <option value = "-">-</option>
+                <option value = "*">*</option>
+                <option value = "/">/</option>
+            </select>
+            <input type = "number" name = "num2" id = "num2" required placeholder="Enter second number">
+            <button type = "submit">Calculate</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
